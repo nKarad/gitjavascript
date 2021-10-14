@@ -22,3 +22,11 @@ if (comidaFavorita == "Pizza") {alert ("Sos un capo")
 else if (comidaFavorita == "Pescado") {alert ("Me da impresion.")
 }
  else {alert ("Tu comida preferida es " +comidaFavorita + ", no entendes nada")}
+
+let encuestaCliente =parseFloat(prompt("Cuanto pagarías por tu comida preferida"));
+
+if (encuestaCliente>1500) {alert("Estás loco");
+}
+else if (encuestaCliente>800) {alert("Buen precio");
+}
+else if (encuestaCliente>0) {alert("Un regalo")}
