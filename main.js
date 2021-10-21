@@ -21,14 +21,83 @@
  
 
 //Clase 3
-let num = parseInt(prompt("Ingresa un numero"))
+// let num = parseInt(prompt("Ingresa un numero"))
 // for(let i =1; i <=10;i++) {let resultado = num*i;
 // console.log(num+"X"+i*"="+resultado)
 // }
 
-for (let i=1; i<10; i++) {
-    if (i == 8 ) {continue;
+// for (let i=1; i<10; i++) {
+//     if (i == 8 ) {continue;
+//     }
+//     {console.log (i);
+// }   }
+
+// for (let i=1 ; i <=10; i++) {
+//     let resultado = num*i;
+//     console.log (num + "x" + i + "=" + resultado);
+// }
+
+// for (let i=1; i<=10; i++) {
+//     if (i % 2 ==0){console.log(i + "es par")  ;  
+//     }
+//     else {console.log (i + "es impar")}
+// }
+
+// let entrada = prompt ("Querés salir del bucle?");
+// while (entrada!="si") {alert ("El usuario no quiere salir")}
+// entrada= prompt ("Seguro?");
+
+
+//NO SALE
+
+// let pass = 1234;
+// let dato = parseInt(prompt("ingrese su pass"));
+// let intentos = 3;
+
+// while ((dato != pass) && (intentos > 0)) {
+//     alert("Contraseña in co rrec ta");
+//     dato =paserlInt(prompt("Nono, de nuevo"));
+//     intentos--;}
+
+
+
+
+
+//Clase 4
+
+// function resta (num1, num2) {
+//     console.log (num1-num2)
+//     let resultado= num1-num2;
+//     return resultado
+// }
+
+// resta (8,7)
+
+
+
+//Calcular IVA
+
+let precio= parseInt(prompt("Ingresa el valor del producto"))
+
+
+//Iva 21%
+function precioConsumidor(precio, impuesto ){
+let precioConsumidor = precio + (precio*impuesto/100);
+console.log (precioConsumidor);
+return precioConsumidor
+}
+
+precioConsumidor (precio, 21)
+ 
+//Iva alimentos 8%
+function precioConsumidor(precio, impuesto ){
+    let precioConsumidor = precio + (precio*impuesto/100);
+    console.log (precioConsumidor);
+    return precioConsumidor
     }
-    {console.log (i);
-}   }
+
+precioConsumidor (precio, 8)
+
+
+ 
 
