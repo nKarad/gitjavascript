@@ -71,33 +71,67 @@
 //     return resultado
 // }
 
-// resta (8,7)
+// // resta (8,7)
 
 
 
-//Calcular IVA
+// //Calcular IVA
 
-let precio= parseInt(prompt("Ingresa el valor del producto"))
+// let precio= parseInt(prompt("Ingresa el valor del producto"))
 
 
-//Iva 21%
-function precioConsumidor(precio, impuesto ){
-let precioConsumidor = precio + (precio*impuesto/100);
-console.log (precioConsumidor);
-return precioConsumidor
+// //Iva 21%
+// function precioConsumidor(precio, impuesto ){
+// let precioConsumidor = precio + (precio*impuesto/100);
+// console.log (precioConsumidor);
+// return precioConsumidor
+// }
+// ReadableStream
+// precioConsumidor (precio, 21)
+ 
+// //Iva alimentos 8%
+// function precioConsumidor(precio, impuesto ){
+//     let precioConsumidor = precio + (precio*impuesto/100);
+//     console.log (precioConsumidor);
+//     return precioConsumidor
+//     }
+
+// precioConsumidor (precio, 8)
+
+
+// const libro = {
+//     titulo: "La Metamorfosis",
+//     genero: "Realismo mágico",
+//     autor: {Nombre: "Fanz",
+//             Apellido: "Kafka"},
+//     añoPublicacion: "1912"
+//     } 
+// console.log(libro);
+// console.log(libro.autor)
+
+
+function Biblioteca (titulo, genero,autor, añoPublicacion) {
+    this.titulo = titulo;
+    this.genero = genero;
+    this.autor = autor;
+    this.año = añoPublicacion;
+    this.fichaTecnica = () => {
+        console.log ("El último libro en tu colección es " +titulo + " y pertenece al género " + ", fue escrito por " + autor +" en el año " +añoPublicacion)
+    }
 }
 
-precioConsumidor (precio, 21)
- 
-//Iva alimentos 8%
-function precioConsumidor(precio, impuesto ){
-    let precioConsumidor = precio + (precio*impuesto/100);
-    console.log (precioConsumidor);
-    return precioConsumidor
-    }
-
-precioConsumidor (precio, 8)
+// const metamorfosis = new Biblioteca ("La Metamofrosis", "Realismo mágico", "Franz Kafka", "1912") 
+// console.log (metamorfosis)
 
 
- 
+const agregarLibro =() =>{
 
+let titulo = prompt("Cuál es el titulo del nuevo libro que compraste?")
+let genero = prompt("A que genero pertenece el libro")
+let autor = prompt ("Quien lo escribió")
+let añoPublicacion   =prompt("En que año se publicó?")
+
+const libro2 = new Biblioteca (titulo, genero, autor, añoPublicacion);
+console.log(libro2)
+console.log(libro2.fichaTecnica())
+}
