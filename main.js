@@ -110,28 +110,45 @@
 // console.log(libro.autor)
 
 
-function Biblioteca (titulo, genero,autor, añoPublicacion) {
-    this.titulo = titulo;
-    this.genero = genero;
-    this.autor = autor;
-    this.año = añoPublicacion;
-    this.fichaTecnica = () => {
-        console.log ("El último libro en tu colección es " +this.titulo + " y pertenece al género " + this.genero + ", fue escrito por " + this.autor +" en el año " +this.año  )
-    }
-}
 
-// const metamorfosis = new Biblioteca ("La Metamofrosis", "Realismo mágico", "Franz Kafka", "1912") 
-// console.log (metamorfosis)
+                                                                                //ENTREGA CLASE 5//
+
+// function Biblioteca (titulo, genero,autor, añoPublicacion) {
+//     this.titulo = titulo;
+//     this.genero = genero;
+//     this.autor = autor;
+//     this.año = añoPublicacion;
+//     this.fichaTecnica = () => {
+//         console.log ("El último libro en tu colección es " +this.titulo + " y pertenece al género " + this.genero + ", fue escrito por " + this.autor +" en el año " +this.año  )
+//     }
+// }
+
+// // const metamorfosis = new Biblioteca ("La Metamofrosis", "Realismo mágico", "Franz Kafka", "1912") 
+// // console.log (metamorfosis)
 
 
-const agregarLibro =() =>{
+// const agregarLibro =() =>{
 
-let titulo = prompt("Cuál es el titulo del nuevo libro que compraste?")
-let genero = prompt("A que genero pertenece el libro")
-let autor = prompt ("Quien lo escribió")
-let añoPublicacion   =prompt("En que año se publicó?")
+// let titulo = prompt("Cuál es el titulo del nuevo libro que compraste?")
+// let genero = prompt("A que genero pertenece el libro")
+// let autor = prompt ("Quien lo escribió")
+// let añoPublicacion   =prompt("En que año se publicó?")
 
-const libro2 = new Biblioteca (titulo, genero, autor, añoPublicacion);
-console.log(libro2)
-console.log(libro2.fichaTecnica())
-}
+// const libro2 = new Biblioteca (titulo, genero, autor, añoPublicacion);
+// console.log(libro2)
+// console.log(libro2.fichaTecnica())
+// }
+
+
+let librosParaNiños = ["Harry Potter", "El señor de los anillos", "Juego de tronos", "Crepusculo"]
+console.log (librosParaNiños)
+librosParaNiños.push ("Narnia")
+console.log (librosParaNiños)
+librosParaNiños.sort
+// let agregarLibro = prompt("Que libro le gusta a tus hijos?")
+// librosParaNiños.push (agregarLibro)
+
+let librosParaAdultos = ("De Sexualidades publicas y Universidades privadas", "El Aleph", "50 sombras de gray")
+
+let catalogo = librosParaNiños.concat(librosParaAdultos)
+console.log (catalogo)
