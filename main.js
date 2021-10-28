@@ -116,7 +116,7 @@ function Biblioteca (titulo, genero,autor, añoPublicacion) {
     this.autor = autor;
     this.año = añoPublicacion;
     this.fichaTecnica = () => {
-        console.log ("El último libro en tu colección es " +titulo + " y pertenece al género " + ", fue escrito por " + autor +" en el año " +añoPublicacion)
+        console.log ("El último libro en tu colección es " +this.titulo + " y pertenece al género " + this.genero + ", fue escrito por " + this.autor +" en el año " +this.año  )
     }
 }
 
