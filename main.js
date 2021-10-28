@@ -144,11 +144,12 @@ let librosParaNiños = ["Harry Potter", "El señor de los anillos", "Juego de tr
 console.log (librosParaNiños)
 librosParaNiños.push ("Narnia")
 console.log (librosParaNiños)
-librosParaNiños.sort
+// librosParaNiños.sort
 // let agregarLibro = prompt("Que libro le gusta a tus hijos?")
 // librosParaNiños.push (agregarLibro)
 
-let librosParaAdultos = ("De Sexualidades publicas y Universidades privadas", "El Aleph", "50 sombras de gray")
+let librosParaAdultos = ["De Sexualidades publicas y Universidades privadas", "El Aleph", "50 sombras de gray"]
+let librosParaAdolescentes = ["Catcher in the rye", "Player N5"]
 
-let catalogo = librosParaNiños.concat(librosParaAdultos)
+let catalogo = librosParaNiños.concat(librosParaAdultos, librosParaAdolescentes)
 console.log (catalogo)
