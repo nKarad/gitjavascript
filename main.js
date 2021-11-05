@@ -145,32 +145,42 @@
 // librosParaNiños.push ("Narnia")
 // console.log (librosParaNiños)
 // // librosParaNiños.sort
-// // let agregarLibro = prompt("Que libro le gusta a tus hijos?")
-// // librosParaNiños.push (agregarLibro)
+// // // let agregarLibro = prompt("Que libro le gusta a tus hijos?")
+// // // librosParaNiños.push (agregarLibro)
 
-// let librosParaAdultos = ["De Sexualidades publicas y Universidades privadas", "El Aleph", "50 sombras de gray"]
-// let librosParaAdolescentes = ["Catcher in the rye", "Player N5"]
+// // let librosParaAdultos = ["De Sexualidades publicas y Universidades privadas", "El Aleph", "50 sombras de gray"]
+// // let librosParaAdolescentes = ["Catcher in the rye", "Player N5"]
 
-// let catalogo = librosParaNiños.concat(librosParaAdultos, librosParaAdolescentes)
-// console.log (catalogo)
+// // let catalogo = librosParaNiños.concat(librosParaAdultos, librosParaAdolescentes)
+// // console.log (catalogo)
 
 
-class libroNuevo {
-    constructor (titulo, genero, autor, año) {
-            this.titulo = titulo;
-            this.genero = genero;
-            this.autor = autor;
-            this.año = año;
-}
-}
+// class libroNuevo {
+//     constructor (titulo, genero, autor, año) {
+//             this.titulo = titulo;
+//             this.genero = genero;
+//             this.autor = autor;
+//             this.año = año;
+// }
+// }
 
-let biblioteca = []
+// let biblioteca = []
 
-const agregarLibro = () =>  {
-let tituloNuevo= prompt("Cuál es el titulo del nuevo libro que compraste?");
-let generoNuevo = prompt("A que genero pertenece el libro");
-let autorNuevo = prompt ("Quien lo escribió");
-let añoNuevo     =prompt("En que año se publicó?");
+// const agregarLibro = () =>  {
+// let tituloNuevo=prompt("Cuál es el titulo del nuevo libro que compraste?");
+// let generoNuevo=prompt("A que genero pertenece el libro");
+// let autorNuevo=prompt ("Quien lo escribió");
+// let añoNuevo=prompt("En que año se publicó?");
 
-let libro = new libroNuevo (tituloNuevo, generoNuevo, autorNuevo, añoNuevo)
-biblioteca.push(libro)}
+// let libro = new libroNuevo (tituloNuevo, generoNuevo, autorNuevo, añoNuevo)
+// biblioteca.push(libro)}
+// console.log(biblioteca)
+
+
+//CLASE 8
+
+let titulo= document.createElement ("h2");
+titulo.setAttribute ("class", "miH2");
+titulo.innerHTML= "<a href=https://www.google.com>Link a Google</a>"
+document.getElementById("prueba").appendChild(titulo)
+console.log(titulo)
