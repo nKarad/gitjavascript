@@ -18,7 +18,7 @@
 
 // let esMenor100 = (encuestaCliente<101)
 // if (esMenor100) {alert("Ratón!")}
- 
+
 
 //Clase 3
 // let num = parseInt(prompt("Ingresa un numero"))
@@ -88,7 +88,7 @@
 // }
 // ReadableStream
 // precioConsumidor (precio, 21)
- 
+
 // //Iva alimentos 8%
 // function precioConsumidor(precio, impuesto ){
 //     let precioConsumidor = precio + (precio*impuesto/100);
@@ -111,7 +111,7 @@
 
 
 
-                                                                                //ENTREGA CLASE 5//
+//ENTREGA CLASE 5//
 
 // function Biblioteca (titulo, genero,autor, añoPublicacion) {
 //     this.titulo = titulo;
@@ -179,8 +179,36 @@
 
 //CLASE 8
 
-let titulo= document.createElement ("h2");
-titulo.setAttribute ("class", "miH2");
-titulo.innerHTML= "<a href=https://www.google.com>Link a Google</a>"
-document.getElementById("prueba").appendChild(titulo)
-console.log(titulo)
+// let titulo= document.createElement ("h2");
+// titulo.setAttribute ("class", "miH2");
+// titulo.innerHTML= "<a href=https://www.google.com>Link a Google</a>"
+// document.getElementById("prueba").appendChild(titulo)
+// console.log(titulo)
+
+//CLASE 9
+const texto = document.querySelector("#texto");
+const boton = document.querySelector("#boton");
+
+
+
+texto.onchange = () =>
+{console.log ("Cambio el texto")}
+texto.onkeydown = () =>
+{console.log (texto.value)}
+const escribir = () => {
+    let texto = prompt("escribi");
+    parrafo.textContent = texto
+}
+boton.addEventListener("click", escribir);
+
+
+
+//Movimientos
+
+boton.addEventListener("mousemove", () => {console.log("hayMovimiento");
+});
+
+
+
+
+
