@@ -192,7 +192,7 @@ const boton = document.querySelector("#boton");
 
 
 texto.onchange = () =>
-{console.log ("Cambio el texto")}
+{console.log ("Cambio el texto a "+texto.value )}
 texto.onkeydown = () =>
 {console.log (texto.value)}
 const escribir = () => {
@@ -201,11 +201,16 @@ const escribir = () => {
 }
 boton.addEventListener("click", escribir);
 
+const selector = document.querySelector ("#selector");
+selector.addEventListener ("change", ()=>{
+    console.log (selector.value)
+})
+
 
 
 //Movimientos
 
-boton.addEventListener("mousemove", () => {console.log("hayMovimiento");
+boton.addEventListener("mousemove", () => {console.log("Hay movimiento");
 });
 
 
