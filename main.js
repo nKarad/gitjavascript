@@ -193,8 +193,8 @@ const boton = document.querySelector("#boton");
 
 texto.onchange = () =>
 {console.log ("Cambio el texto a "+texto.value )}
-texto.onkeydown = () =>
-{console.log (texto.value)}
+// texto.onkeydown = () =>
+// {console.log (texto.value)}
 const escribir = () => {
     let texto = prompt("escribi");
     parrafo.textContent = texto
