@@ -185,35 +185,43 @@
 // document.getElementById("prueba").appendChild(titulo)
 // console.log(titulo)
 
-//CLASE 9
-const texto = document.querySelector("#texto");
-const boton = document.querySelector("#boton");
+// //CLASE 9
+// const texto = document.querySelector("#texto");
+// const boton = document.querySelector("#boton");
 
 
 
-texto.onchange = () =>
-{console.log ("Cambio el texto a "+texto.value )}
-// texto.onkeydown = () =>
-// {console.log (texto.value)}
-const escribir = () => {
-    let texto = prompt("escribi");
-    parrafo.textContent = texto
-}
-boton.addEventListener("click", escribir);
+// texto.onchange = () =>
+// {console.log ("Cambio el texto a "+texto.value )}
+// // texto.onkeydown = () =>
+// // {console.log (texto.value)}
+// const escribir = () => {
+//     let texto = prompt("escribi");
+//     parrafo.textContent = texto
+// }
+// boton.addEventListener("click", escribir);
 
-const selector = document.querySelector ("#selector");
-selector.addEventListener ("change", ()=>{
-    console.log (selector.value)
-})
+// const selector = document.querySelector ("#selector");
+// selector.addEventListener ("change", ()=>{
+//     console.log (selector.value)
+// })
+
+// const enlace= document.querySelector("#enlace")
+// enlace.onlcick = (e) => {
+//     e.preventDefault();
+// }
+
+// //Movimientos
+
+// boton.addEventListener("mousemove", () => {console.log("Hay movimiento");
+// });
 
 
 
-//Movimientos
+//Formulario de contacto 
 
-boton.addEventListener("mousemove", () => {console.log("Hay movimiento");
+let form = document.getElementsByTagName("form")[0];
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Recibido!");
 });
-
-
-
-
-
