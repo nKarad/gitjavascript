@@ -63,7 +63,7 @@
 
 
 
-//Clase 4
+// Clase 4
 
 // function resta (num1, num2) {
 //     console.log (num1-num2)
@@ -71,7 +71,7 @@
 //     return resultado
 // }
 
-// // resta (8,7)
+// resta (8,7)
 
 
 
@@ -186,20 +186,24 @@
 // console.log(titulo)
 
 // //CLASE 9
-// const texto = document.querySelector("#texto");
-// const boton = document.querySelector("#boton");
+const parrafo = document.querySelector("#parrafo");
+const boton = document.querySelector("#btn");
 
+const escribir =() =>{ 
+let texto = prompt ("Como es tu nombre?")
+parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
 
+boton.addEventListener("click", escribir)
 
-// texto.onchange = () =>
-// {console.log ("Cambio el texto a "+texto.value )}
+// nombre.onchange = () =>
+// {console.log ("Cambio el nombre a "+nombre.value )}
 // // texto.onkeydown = () =>
-// // {console.log (texto.value)}
+// // // {console.log (texto.value)}
 // const escribir = () => {
-//     let texto = prompt("escribi");
+//     let Nombre = prompt("escribi");
 //     parrafo.textContent = texto
 // }
-// boton.addEventListener("click", escribir);
+// // boton.addEventListener("click", escribir);
 
 // const selector = document.querySelector ("#selector");
 // selector.addEventListener ("change", ()=>{
@@ -220,8 +224,8 @@
 
 //Formulario de contacto 
 
-let form = document.getElementsByTagName("form")[0];
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Recibido!");
-});
+// let form = document.getElementsByTagName("form")[0];
+// form.addEventListener("submit", () =>  
+// {alert("Recibido!");
+// });
+
