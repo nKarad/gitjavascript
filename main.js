@@ -235,17 +235,70 @@ let carts = document.querySelectorAll(".add-cart")
 
 let products = [{
     name: "Jeresy Bulls",
-    tag:"bullsOficial",
+    tag:"bulls",
     price: 1500,
     incCart: 0
-}]
+},
+
+{
+    name: "Jeresy Bulls Alternative",
+    tag:"bullsAlt",
+    price: 1500,
+    incCart: 0
+},
+
+{
+    name: "Jeresy Lakers",
+    tag:"lakers",
+    price: 1500,
+    incCart: 0
+},
+
+{
+    name: "Jeresy Spurs",
+    tag:"spurs",
+    price: 1500,
+    incCart: 0
+},
+{
+    name: "Jeresy Pistons",
+    tag: "pistons",
+    price: 1500,
+    incCart: 0
+},
+
+{
+    name: "Jeresy Philly",
+    tag:"philly",
+    price: 1500,
+    incCart: 0
+},
+
+{
+    name: "Jeresy Raptors",
+    tag:"raptors",
+    price: 1500,
+    incCart: 0
+},
+
+{
+    name: "Jeresy Suns",
+    tag:"suns",
+    price: 1500,
+    incCart: 0
+},
+]
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
-        cartNumbers();
+        cartNumbers(products[i]);
     })
 }
+function onLoadCartNumbers () {
+    let productNumbers = localStorage.getItem("cartNumbers")
+    if(productNumbers){ document.querySelector(".cart span").textContent=productNumbers}
+}
 
-function cartNumbers() {
+function cartNumbers(product) {console.log(" a vergaston ", product);
     let productNumbers = localStorage.getItem("cartNumbers"); 
 
     productNumbers = parseInt(productNumbers);
@@ -260,4 +313,6 @@ document.querySelector(".cart span").textContent= 1;
 
 }
 }
+onLoadCartNumbers ()
  
+
