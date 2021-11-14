@@ -4,7 +4,7 @@ margin: 0;
 
   body {   font-family: "Montserrat", sans-serif;;
     min-height: 100vh;
-    background-color: #4b4b4b;
+    background-color: #ffffff;
     }
   
   html {
@@ -15,7 +15,7 @@ margin: 0;
     font-weight: 300; }
   
   h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     font-size: 9vh;
     margin: 3%; }
@@ -23,7 +23,7 @@ margin: 0;
   h2 {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
-  color: antiquewhite; }
+  color: rgb(255, 255, 255); }
   
   footer {display: inline-block;
     width: 100%;
@@ -53,9 +53,9 @@ margin: 0;
   .headerCursos {display: flex;
     background-size: cover;
     /* position: relative; */
-    height: 35vh;
+    height: 40vh;
     width: 100vw;
-    background-image: url(https://i.ibb.co/Fqy1MYw/bar-tools-blancoynegro.jpg);
+    background-image: url(https://i.ibb.co/2hT7GVD/intentodos.png);
     background-size: cover;
     justify-content: left;
     align-items: center; }
@@ -64,7 +64,7 @@ margin: 0;
     text-align: center;
     margin: 0;
     padding: 0; }
-  
+    
   .bodyForm {
     color: blanchedalmond;
     background-color: #01130a; }
@@ -152,6 +152,9 @@ color:white}
     font-family: "Montserrat", sans-serif;
     font-weight: 600; }
   
+
+  /* Form */
+
   .titulo h3 {
     margin-bottom: 3rem;
     font-size: 2rem;
@@ -211,7 +214,7 @@ color:white}
     background-size: cover; }
   
 
-header {background: #013a1e;
+header {background: #6d06e2;
   grid-column-start: 1;
       grid-column-end: 4}
       
@@ -225,12 +228,12 @@ header {background: #013a1e;
       nav ul {
         display:flex;
         list-style: none;
-        padding:0; 
+        padding-right: 20px; 
       justify-content:flex-end}
       
       nav li a {display:blck;
       padding:0px 30px;
-      color:white;
+      color:rgb(255, 255, 255);
       text-decoration:none;
       font-size: 2rem;
       }
@@ -252,24 +255,27 @@ justify-content: center;
 flex-wrap: wrap;
 margin-top: 30px;}
 
-.image {margin-right: 8rem;
-margin-left: 8rem;
-margin-bottom: 4rem;
-margin-top: 4rem;
+.image {margin-right: 4rem;
+margin-left: 4rem;
+margin-bottom: 2rem;
+margin-top: 2rem;
 position: relative;
 overflow: hidden;}
 
 
 .add-cart {position: absolute;
 width: 100%;
-background-color: rgb(51, 51, 51);
+background-color: #6d06e2;
 transition: all 0.
 3s ease-in-out;
 opacity: 0;
 cursor: pointer;
 text-align: center;}
 
-.image:hover .cart1 
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 
 {bottom: 50px;
 opacity: 1;
 padding: 10px;
@@ -277,19 +283,25 @@ text-decoration: none;}
 
 
 
+
+
   @media screen and (max-width:768px)  { header label {display:block}
   
+ /* VER TEMA TRANSICIONES */
+
 nav 
 {position:absolute;
-  background: #013a1e;
+  background: #ffffff;
   width:45%;
   margin-left: -100%;
   font-size: 80%;
+  transition: all 0.3s ease-in-out;
 
 }
 
 nav ul {flex-direction:column;
-  background-color: #013a1e 
+  background-color:#6d06e2;
+  transition: all 1s ease-in-out;
 }
 
 }

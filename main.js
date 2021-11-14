@@ -186,14 +186,14 @@
 // console.log(titulo)
 
 // //CLASE 9
-const parrafo = document.querySelector("#parrafo");
-const boton = document.querySelector("#btn");
+// const parrafo = document.querySelector("#parrafo");
+// const boton = document.querySelector("#btn");
 
-const escribir =() =>{ 
-let texto = prompt ("Como es tu nombre?")
-parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
+// const escribir =() =>{ 
+// let texto = prompt ("Como es tu nombre?")
+// parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
 
-boton.addEventListener("click", escribir)
+// boton.addEventListener("click", escribir)
 
 // nombre.onchange = () =>
 // {console.log ("Cambio el nombre a "+nombre.value )}
@@ -229,3 +229,20 @@ boton.addEventListener("click", escribir)
 // {alert("Recibido!");
 // });
 
+//Carrito
+
+let carts = document.querySelectorAll(".add-cart")
+// carts [0], carts [1], carts [2], carts [3]
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener("click", () => {
+        cartNumbers();
+    })
+}
+
+function cartNumbers() {
+    let productNumbers = localStorage.getItem ("cartNumbers")
+    localStorage.setItem("cartNumbers", 1)
+}
+
+productNumbers =parseInt (productNumbers)
+localStorage.setItem ("cartNumbers", 1)
