@@ -232,7 +232,13 @@
 //Carrito
 
 let carts = document.querySelectorAll(".add-cart")
-// carts [0], carts [1], carts [2], carts [3]
+
+let products = [{
+    name: "Jeresy Bulls",
+    tag:"bullsOficial",
+    price: 1500,
+    incCart: 0
+}]
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
         cartNumbers();
@@ -240,9 +246,18 @@ for (let i = 0; i < carts.length; i++) {
 }
 
 function cartNumbers() {
-    let productNumbers = localStorage.getItem ("cartNumbers")
-    localStorage.setItem("cartNumbers", 1)
-}
+    let productNumbers = localStorage.getItem("cartNumbers"); 
 
-productNumbers =parseInt (productNumbers)
-localStorage.setItem ("cartNumbers", 1)
+    productNumbers = parseInt(productNumbers);
+    
+    if (productNumbers) {
+        localStorage.setItem("cartNumbers", productNumbers + 1);
+         document.querySelector(".cart span").textContent= productNumbers+ 1;
+    }
+    else { localStorage.setItem("cartNumbers", 1) ;
+document.querySelector(".cart span").textContent= 1;
+
+
+}
+}
+ 
