@@ -245,15 +245,33 @@ position:relative;
 overflow:hidden}
 
 
-span {color: white
+span {color: rgb(0, 0, 0)
 ;
-font-size: 40px;}
+font-size: 15px;}
 
 
-.container {display:flex;
-justify-content: center;
+.container,
+.products-container {display:flex;
+justify-content: space-around;
 flex-wrap: wrap;
 margin-top: 30px;}
+
+.product ion-icon {
+  font-size: 220px;
+  color: #6d06e2;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.products-container ion-icon {
+  font-size: 220px;
+  color: #6d06e2;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 
 .image {margin-right: 4rem;
 margin-left: 4rem;
@@ -310,3 +328,48 @@ nav ul {flex-direction:column;
 
 
 #parrafo {color: azure;}
+
+/* PAGINA PRODUCTOS */
+
+
+.products-container{
+  max-width: 90%;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+.product-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid blueviolet;
+  margin: 0 auto;
+}
+.product-title{
+  width: 35%;
+}
+
+.price {width:  25%;
+
+display: flex;
+align-items: center;}
+
+.quantity {width:  30%;
+ 
+  display: flex;
+  align-items: center;}
+
+.total{
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+display: flex;
+justify-content: space-around;
+align-items: center
+;
+padding: 10px 0;
+border-bottom: 1px solid rgb(76, 4, 99);}

@@ -1,7 +1,7 @@
 // Clase 2
 // let comidaFavorita = prompt("Cual es tu comida preferida?")
 // if (comidaFavorita == "Pizza") {alert ("Sos un capo")
-// }   
+// }
 // else if (comidaFavorita == "Pescado") {alert ("Me da impresion.")
 // }
 //  else {alert ("Tu comida preferida es " +comidaFavorita + ", no entendes nada")}
@@ -38,7 +38,7 @@
 // }
 
 // for (let i=1; i<=10; i++) {
-//     if (i % 2 ==0){console.log(i + "es par")  ;  
+//     if (i % 2 ==0){console.log(i + "es par")  ;
 //     }
 //     else {console.log (i + "es impar")}
 // }
@@ -105,7 +105,7 @@
 //     autor: {Nombre: "Fanz",
 //             Apellido: "Kafka"},
 //     añoPublicacion: "1912"
-//     } 
+//     }
 // console.log(libro);
 // console.log(libro.autor)
 
@@ -123,7 +123,7 @@
 //     }
 // }
 
-// // const metamorfosis = new Biblioteca ("La Metamofrosis", "Realismo mágico", "Franz Kafka", "1912") 
+// // const metamorfosis = new Biblioteca ("La Metamofrosis", "Realismo mágico", "Franz Kafka", "1912")
 // // console.log (metamorfosis)
 
 
@@ -189,7 +189,7 @@
 // const parrafo = document.querySelector("#parrafo");
 // const boton = document.querySelector("#btn");
 
-// const escribir =() =>{ 
+// const escribir =() =>{
 // let texto = prompt ("Como es tu nombre?")
 // parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
 
@@ -222,10 +222,10 @@
 
 
 
-//Formulario de contacto 
+//Formulario de contacto
 
 // let form = document.getElementsByTagName("form")[0];
-// form.addEventListener("submit", () =>  
+// form.addEventListener("submit", () =>
 // {alert("Recibido!");
 // });
 
@@ -235,84 +235,166 @@ let carts = document.querySelectorAll(".add-cart")
 
 let products = [{
     name: "Jeresy Bulls",
-    tag:"bulls",
-    price: 1500,
+    tag: "bulls",
+    price: 2000,
     incCart: 0
 },
 
 {
     name: "Jeresy Bulls Alternative",
-    tag:"bullsAlt",
-    price: 1500,
+    tag: "bullsAlt",
+    price: 1000,
     incCart: 0
 },
 
 {
     name: "Jeresy Lakers",
-    tag:"lakers",
-    price: 1500,
+    tag: "lakers",
+    price: 2000,
     incCart: 0
 },
 
 {
     name: "Jeresy Spurs",
-    tag:"spurs",
-    price: 1500,
+    tag: "spurs",
+    price: 2000,
     incCart: 0
 },
 {
     name: "Jeresy Pistons",
     tag: "pistons",
-    price: 1500,
+    price: 500,
     incCart: 0
 },
 
 {
     name: "Jeresy Philly",
-    tag:"philly",
-    price: 1500,
+    tag: "philly",
+    price: 500,
     incCart: 0
 },
 
 {
     name: "Jeresy Raptors",
-    tag:"raptors",
-    price: 1500,
+    tag: "raptors",
+    price: 300,
     incCart: 0
 },
 
 {
     name: "Jeresy Suns",
-    tag:"suns",
-    price: 1500,
+    tag: "suns",
+    price: 300,
     incCart: 0
 },
 ]
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
         cartNumbers(products[i]);
+        totalCost(products[i])
     })
 }
-function onLoadCartNumbers () {
+function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem("cartNumbers")
-    if(productNumbers){ document.querySelector(".cart span").textContent=productNumbers}
+    if (productNumbers) { document.querySelector(".cart span").textContent = productNumbers }
 }
 
-function cartNumbers(product) {console.log(" a vergaston ", product);
-    let productNumbers = localStorage.getItem("cartNumbers"); 
+function cartNumbers(product) {
+    // console.log(" a vergaston ", product)
+    let productNumbers = localStorage.getItem("cartNumbers");
 
     productNumbers = parseInt(productNumbers);
-    
+
     if (productNumbers) {
         localStorage.setItem("cartNumbers", productNumbers + 1);
-         document.querySelector(".cart span").textContent= productNumbers+ 1;
+        document.querySelector(".cart span").textContent = productNumbers + 1;
     }
-    else { localStorage.setItem("cartNumbers", 1) ;
-document.querySelector(".cart span").textContent= 1;
+    else {
+        localStorage.setItem("cartNumbers", 1);
+        document.querySelector(".cart span").textContent = 1;
+    }
+
+    setItem(product);
+}
+
+   function setItem(product){
+let cartItems = localStorage.getItem("productsInCart")
+cartItems =JSON.parse(cartItems)
+// console.log("mis items son ", cartItems)
+
+
+if (cartItems!=null){
+
+     if( cartItems[product.tag] == undefined) {
+         cartItems= {
+             ...cartItems,
+             [product.tag]:product
+            }
+        }
+
+
+    cartItems[product.tag].incCart+=1;
+}
+else{
+    product.incCart = 1;
+    cartItems={
+    [product.tag]:product
+}
+}
+
+localStorage.setItem("productsInCart", JSON.stringify (cartItems))
+}
+
+function totalCost(product){
+
+    let cartCost =localStorage.getItem("totalCost")
+// console.log ("Costo total es ", cartCost)
+;
+
+console.log("el costo total es", cartCost);
+console.log(typeof cartCost);
+
+if (cartCost != null){
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost+ product.price);
+}
+
+else {localStorage.setItem("totalCost", product.price )}
 
 
 }
-}
-onLoadCartNumbers ()
- 
 
+function displayCart(){
+let cartItems = localStorage.getItem("productsInCart");
+cartItems=JSON.parse(cartItems);
+// console.log(cartItems)
+let productContainer = document.querySelector(".products");
+
+if (cartItems && productContainer) {
+    // console.log ("A vergaston")
+
+    productContainer.innerHTML ="";
+    Object.values(cartItems).map(item =>{
+        productContainer.innerHTML+= `
+        <div class="product" >
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+
+        <img src="./assets/${item.tag}.png">
+        <span>${item.name}</span>
+        </div>
+        <div class=price>$${item.price}</div>
+        <div class=quantity>
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        ${item.incCart}
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+        <div class = total >$${item.incCart * item.price }.00</div>
+        `
+    })
+}
+}
+
+
+
+   onLoadCartNumbers()
+
+displayCart();
