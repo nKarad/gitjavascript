@@ -406,3 +406,5 @@ let productContainer = document.querySelector(".products");
 }
 
 
+onLoadCartNumbers();
+displayCart();
