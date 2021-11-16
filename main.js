@@ -395,11 +395,7 @@ let productContainer = document.querySelector(".products");
         <div class = total >$${item.incCart * item.price }.00</div>
         `
     })
-    productContainer.innerHTML += `
-    <div class="basketTotalContainer">
-        <h4 class="basketTotalTitle">Basket Total</h4>
-        <h4 class="basketTotal">$${cart},00</h4>
-    </div>`
+ 
 
 
 }
