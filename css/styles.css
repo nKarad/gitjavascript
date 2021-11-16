@@ -289,17 +289,17 @@ display: flex;
 flex-wrap: wrap;}
 
 .product img 
-{width:  75px;}
+{width:  90px;}
 .products-container {
   align-items: center;
-  max-width: 950px;
+  max-width:80rem;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 50px;
 }
 
 .products-container ion-icon {
-  font-size: 32px;
+  font-size: 23px;
   color: #6d06e2;
   margin-left: 10px;
   margin-right: 10px;
@@ -309,10 +309,10 @@ flex-wrap: wrap;}
 
 .product-header {
   width: 100%;
-  max-width: 850px;
+  max-width: 80rem;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 4px solid blueviolet;
+  border-bottom: 3px solid blueviolet;
   margin: 0 auto;
 }
 .product-title{
@@ -320,13 +320,13 @@ flex-wrap: wrap;}
 }
 
 .price {
-  width:  15%;;
+  width:  10%;;
   display: flex;
   align-items: center;
 border-bottom: 1px solid blueviolet}
 
 
-   .quantity {width:  15%;
+   .quantity {width: 15%;
     border-bottom: 1px solid blueviolet;
   display: flex;
   align-items: center;}
