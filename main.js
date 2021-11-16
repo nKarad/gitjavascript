@@ -370,27 +370,32 @@ cartItems=JSON.parse(cartItems);
 // console.log(cartItems)
 let productContainer = document.querySelector(".products");
 
-if (cartItems && productContainer) {
+
     // console.log ("A vergaston")
 
+    //Agregar o quitar items desde el carrito linea 391
+    //Tarjetas de items 
+    if (cartItems && productContainer) {
     productContainer.innerHTML ="";
     Object.values(cartItems).map(item =>{
         productContainer.innerHTML+= `
         <div class="product" >
-        <ion-icon name="arrow-dropright-circle"></ion-icon>
-
+        <ion-icon name="close-circle"></ion-icon>
         <img src="./assets/${item.tag}.png">
         <span>${item.name}</span>
-        </div>
+        </div>  
+        
+        
         <div class=price>$${item.price}</div>
+
         <div class=quantity>
-        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+         <ion-icon name="arrow-dropleft-circle"></ion-icon>
         ${item.incCart}
         <ion-icon name="arrow-dropright-circle"></ion-icon>
         <div class = total >$${item.incCart * item.price }.00</div>
         `
     })
-}
+}           
 }
 
 

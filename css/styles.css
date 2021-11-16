@@ -81,7 +81,12 @@ margin: 0;
 
   .textoGridHover {
     font-family: "Montserrat", sans-serif; }
-  
+
+
+
+    /* Form */
+
+    
   .form {
     font-family: "Montserrat", sans-serif;
     width: 500px;
@@ -100,8 +105,6 @@ margin: 0;
     margin: 20px;
     font-size: 24px; }
   
-  .inicio a:hover {
-    color: wheat; }
   
   .materialesBasicos {
     margin-top: 150px;
@@ -153,8 +156,7 @@ color:white}
     font-weight: 600; }
   
 
-  /* Form */
-
+ 
   .titulo h3 {
     margin-bottom: 3rem;
     font-size: 2rem;
@@ -167,52 +169,6 @@ color:white}
     color: white; }
   
 
-  .gridIndex {
-    display: flex;
-    justify-content: center;
-    display: grid;
-    margin-top: 10vh;
-    grid-template-columns: 20vh 20vh 20vh 25vh 25vh;
-    grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
-    gap: 8vw 8vh;
-    grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index"     "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
-  
-  .infoGrid {
-    margin-left: 3vh; }
-  
-  .infoInternaGrid {
-    margin-left: 1vw;
-    margin-right: 1vw;
-    font-size: 50%; } 
-  
-  .textoIndex {
-    font-size: 3vh;
-    margin: 2%; }
-  
-  .foto1Index {
-    grid-area: foto1Index;
-    background-image: url(https://cdn.trendhunterstatic.com/thumbs/luxury-drinks.jpeg);
-    background-position: center;
-    background-size: cover; }
-  
-  .texto1Index {
-    grid-area: texto1Index;
-    background-color: rgba(0, 19, 8, 0.678);
-    background-position: center;
-    background-size: cover; }
-  
-  .foto2Index {
-    grid-area: foto2Index;
-    background-image: url(https://i.pinimg.com/originals/46/8c/61/468c61ea235dd7efb79e9e8778664817.jpg);
-    background-position: center;
-    background-size: cover; }
-  
-  .texto2Index {
-    grid-area: texto2Index;
-    background-color: rgba(0, 19, 8, 0.678);
-    background-position: center;
-    background-size: cover; }
-  
 
 header {background: #6d06e2;
   grid-column-start: 1;
@@ -239,10 +195,22 @@ header {background: #6d06e2;
       }
       
 
-.foto{margin-right: 20px;
+/* PAGINA PRODUCTOS */
+
+
+.container,
+.products-container {display:flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 30px;
+padding-bottom: 100px;}
+
+
+
+/* .foto{margin-right: 20px;
 margin-left: 20px;
 position:relative;
-overflow:hidden}
+overflow:hidden} */
 
 
 span {color: rgb(0, 0, 0)
@@ -250,27 +218,6 @@ span {color: rgb(0, 0, 0)
 font-size: 15px;}
 
 
-.container,
-.products-container {display:flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-top: 30px;}
-
-.product ion-icon {
-  font-size: 220px;
-  color: #6d06e2;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.products-container ion-icon {
-  font-size: 220px;
-  color: #6d06e2;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
 
 
 .image {margin-right: 4rem;
@@ -329,47 +276,67 @@ nav ul {flex-direction:column;
 
 #parrafo {color: azure;}
 
-/* PAGINA PRODUCTOS */
 
 
-.products-container{
-  max-width: 90%;
+
+/* Carrito */
+.products {width: 100%;
+display: flex;
+flex-wrap: wrap;}
+
+.product img 
+{width:  75px;}
+.products-container {
+  align-items: center;
+  max-width: 650px;
   justify-content: space-around;
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 50px;
 }
 
+.products-container ion-icon {
+  font-size: 32px;
+  color: #6d06e2;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
 .product-header {
   width: 100%;
+  max-width: 650px;
   display: flex;
   justify-content: flex-start;
   border-bottom: 4px solid blueviolet;
   margin: 0 auto;
 }
 .product-title{
-  width: 35%;
-}
+  width: 45%;}
 
-.price {width:  25%;
+.price {
+  width:  15%;;
+  display: flex;
+  align-items: center;}
 
-display: flex;
-align-items: center;}
 
-.quantity {width:  30%;
+   .quantity {width:  30%;
  
   display: flex;
   align-items: center;}
 
-.total{
+.total{width:  10%;
+  border-bottom: 1px solid blueviolet;
   display: flex;
   align-items: center;
-}
+} 
 
-.product {
+   .product {
   width: 45%;
-display: flex;
-justify-content: space-around;
-align-items: center
-;
-padding: 10px 0;
-border-bottom: 1px solid rgb(76, 4, 99);}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(76, 4, 99);} */
+  
+  
