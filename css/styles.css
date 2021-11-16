@@ -240,7 +240,11 @@ text-align: center;}
 .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
-.image:hover .cart4 
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8
 {bottom: 50px;
 opacity: 1;
 padding: 10px;

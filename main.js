@@ -269,8 +269,7 @@ let products = [{
 
 {
     name: "Jeresy Philly",
-    tag: "philly",
-    price: 500,
+    tag: "philly",e: 500,
     incCart: 0
 },
 
