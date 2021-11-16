@@ -241,7 +241,7 @@ let products = [{
 },
 
 {
-    name: "Jeresy Bulls Alternative",
+    name: "Bulls Alt.",
     tag: "bullsAlt",
     price: 1000,
     incCart: 0
