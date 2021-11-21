@@ -1,241 +1,257 @@
-*{padding: 0;
-margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-  body {   font-family: "Montserrat", sans-serif;;
-    min-height: 100vh;
-    background-color: #ffffff;
-    }
-  
-  html {
-    height: 100%; }
-  
-  p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300; }
-  
-  h1 {
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
-    font-size: 9vh;
-    margin: 3%; }
-  
-  h2 {
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-  color: rgb(255, 255, 255); }
-  
-  footer {display: inline-block;
-    width: 100%;
-    background-color: #0e0d0d;;
-    color: white;
-    text-align-last:right;
-    height: 50px }
-  
-    /* main {
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 9vh;
+  margin: 3%;
+}
+
+h2 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #0e0d0d;
+  color: white;
+  text-align-last: right;
+  height: 50px;
+}
+
+/* main {
       padding-top: 80px; } */
-  
-  a {
-    text-decoration: none;
-    color: white; 
-  }
-  
-  .headerIndex {display: flex;
-    background-size: cover;
-    /* position: relative; */
-    height: 50h;
-    width: 100vw;
-    background-image: url(https://cdn.hopculture.com/wp-content/uploads/2017/11/mixologist-LEAD.jpg);
-    background-size: cover;
-    justify-content: left;
-    align-items: center; }
-  
-  .headerCursos {display: flex;
-    background-size: cover;
-    /* position: relative; */
-    height: 40vh;
-    width: 100vw;
-    background-image: url(https://i.ibb.co/2hT7GVD/intentodos.png);
-    background-size: cover;
-    justify-content: left;
-    align-items: center; }
 
-  .formControl {
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-    
-  .bodyForm {
-    color: blanchedalmond;
-    background-color: #01130a; }
+a {
+  text-decoration: none;
+  color: white;
+}
 
+.headerIndex {
+  display: flex;
+  background-size: cover;
+  /* position: relative; */
+  height: 50h;
+  width: 100vw;
+  background-image: url(https://cdn.hopculture.com/wp-content/uploads/2017/11/mixologist-LEAD.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
 
-  .h1MainPage2 {
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-    padding: 9px;
-    margin: 8px;
-    background-color: #021b0f;
-    color: #fae9c9; }
+.headerCursos {
+  display: flex;
+  background-size: cover;
+  /* position: relative; */
+  height: 40vh;
+  width: 100vw;
+  background-image: url(https://i.ibb.co/2hT7GVD/intentodos.png);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
 
-  .textoGridHover {
-    font-family: "Montserrat", sans-serif; }
+.formControl {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
+.bodyForm {
+  color: blanchedalmond;
+  background-color: #01130a;
+}
 
+.h1MainPage2 {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  padding: 9px;
+  margin: 8px;
+  background-color: #021b0f;
+  color: #fae9c9;
+}
 
-    /* Form */
+.textoGridHover {
+  font-family: "Montserrat", sans-serif;
+}
 
-    
-  .form {
-    font-family: "Montserrat", sans-serif;
-    width: 500px;
-    height: 90px;
-    padding: 9px;
-    margin: 0px;
-    background-color: rgba(190, 190, 190, 0.288);
-    color: #fae9c9; }
-    .form .formulario {
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-  
-  .inicio {
-    display: inline;
-    margin: 20px;
-    font-size: 24px; }
-  
-  
-  .materialesBasicos {
-    margin-top: 150px;
-    list-style-position: inside;
-    list-style-image: url(file:///C:/Users/Nico/Documents/Coder%20House/Clase%203/assets/Copa.jpg);
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "Montserrat", sans-serif;
-    height: fit-content;
-    width: fit-content; }
+/* Form */
 
-  .estiloTexto {
-    color: blanchedalmond;
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5vh;
-    font-weight: 500; }
-  
-  .estiloForm {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 60vw;
-    border-bottom: 1px solid white;
-    font-size: 1.5rem;
-    margin-bottom: 2vh; 
-color:white}
-    input::placeholder{
-        color:white;
-      }
-      textarea::placeholder {
-        color: #fff;  
-        font-family: "Montserrat", sans-serif;
-        color: white;}
+.form {
+  font-family: "Montserrat", sans-serif;
+  width: 500px;
+  height: 90px;
+  padding: 9px;
+  margin: 0px;
+  background-color: rgba(190, 190, 190, 0.288);
+  color: #fae9c9;
+}
+.form .formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-    .estiloForm2 {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        width: 60vw;
-        font-size: 1.5rem;
-        margin-bottom: 2vh; 
-    }
-  
-  .titulo h2 {margin-top: 10%;
-    margin-bottom: 10%;
-    font-size: 5rem;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600; }
-  
+.inicio {
+  display: inline;
+  margin: 20px;
+  font-size: 24px;
+}
 
- 
-  .titulo h3 {
-    margin-bottom: 3rem;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300; 
-  color: antiquewhite;}
-  
-  .submit {
-    color: white; }
-  
+.materialesBasicos {
+  margin-top: 150px;
+  list-style-position: inside;
+  list-style-image: url(file:///C:/Users/Nico/Documents/Coder%20House/Clase%203/assets/Copa.jpg);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  height: fit-content;
+  width: fit-content;
+}
 
+.estiloTexto {
+  color: blanchedalmond;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5vh;
+  font-weight: 500;
+}
 
-header {background: #6d06e2;
+.estiloForm {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 60vw;
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+textarea::placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.estiloForm2 {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 60vw;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+}
+
+.titulo h2 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.titulo h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: antiquewhite;
+}
+
+.submit {
+  color: white;
+}
+
+header {
+  background: #6d06e2;
   grid-column-start: 1;
-      grid-column-end: 4}
-      
-      #burga {display:none}
-      
-      header label {
-        display:inline-block; 
-        padding:10px; 
-        display:none}
-      
-      nav ul {
-        display:flex;
-        list-style: none;
-        padding-right: 20px; 
-      justify-content:flex-end}
-      
-      nav li a {display:blck;
-      padding:0px 30px;
-      color:rgb(255, 255, 255);
-      text-decoration:none;
-      font-size: 2rem;
-      }
-      
+  grid-column-end: 4;
+}
+
+#burga {
+  display: none;
+}
+
+header label {
+  display: inline-block;
+  padding: 10px;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+nav li a {
+  display: blck;
+  padding: 0px 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2rem;
+}
 
 /* PAGINA PRODUCTOS */
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
 
-.container,
-.products-container {display:flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-top: 30px;
-padding-bottom: 100px;}
+span {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
 
+.image {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
 
-
-/* .foto{margin-right: 20px;
-margin-left: 20px;
-position:relative;
-overflow:hidden} */
-
-
-span {color: rgb(0, 0, 0)
-;
-font-size: 15px;}
-
-
-
-
-.image {margin-right: 4rem;
-margin-left: 4rem;
-margin-bottom: 2rem;
-margin-top: 2rem;
-position: relative;
-overflow: hidden;}
-
-
-.add-cart {position: absolute;
-width: 100%;
-background-color: #6d06e2;
-transition: all 0.
-3s ease-in-out;
-opacity: 0;
-cursor: pointer;
-text-align: center;}
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: #6d06e2;
+  transition: all 0 3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
 
 .image:hover .cart1,
 .image:hover .cart2,
@@ -244,55 +260,18 @@ text-align: center;}
 .image:hover .cart5,
 .image:hover .cart6,
 .image:hover .cart7,
-.image:hover .cart8
-{bottom: 50px;
-opacity: 1;
-padding: 10px;
-text-decoration: none;}
-
-
-
-
-
-  @media screen and (max-width:768px)  { header label {display:block}
-  
- /* VER TEMA TRANSICIONES */
-
-nav 
-{position:absolute;
-  background: #ffffff;
-  width:45%;
-  margin-left: -100%;
-  font-size: 80%;
-  transition: all 0.3s ease-in-out;
-
+.image:hover .cart8 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
 }
-
-nav ul {flex-direction:column;
-  background-color:#6d06e2;
-  transition: all 1s ease-in-out;
-}
-
-}
-
-#burga:checked ~ .expandible {margin:0}
-
-
-#parrafo {color: azure;}
-
-
-
 
 /* Carrito */
-.products {width: 100%;
-display: flex;
-flex-wrap: wrap;}
 
-.product img 
-{width:  90px;}
 .products-container {
   align-items: center;
-  max-width:80rem;
+  max-width: 80rem;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 50px;
@@ -306,43 +285,86 @@ flex-wrap: wrap;}
   cursor: pointer;
 }
 
-
 .product-header {
   width: 100%;
   max-width: 80rem;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 3px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
   margin: 0 auto;
 }
-.product-title{
+.product-title {
   width: 45%;
+  border-bottom: 1px solid blueviolet;
 }
 
 .price {
-  width:  10%;;
+  width: 24%;
   display: flex;
   align-items: center;
-border-bottom: 1px solid blueviolet}
+  border-bottom: 1px solid blueviolet;
+}
 
-
-   .quantity {width: 15%;
-    border-bottom: 1px solid blueviolet;
-  display: flex;
-  align-items: center;}
-
-.total{width:  10%;
+.quantity {
+  width: 20%;
   border-bottom: 1px solid blueviolet;
   display: flex;
   align-items: center;
-} 
+}
 
-   .product {
+.total {
+  width: 11%;
+  border-bottom: 1px solid blueviolet;
+  display: flex;
+  align-items: center;
+}
+
+.product {
   width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
-  border-bottom: 1px solid rgb(76, 4, 99);} 
-  
-  
+
+  border-bottom: 1px solid rgb(76, 4, 99);
+}
+.products {
+  width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product img {
+  width: 85px;
+}
+/* Media querys */
+
+@media screen and (max-width: 768px) {
+  header label {
+    display: block;
+  }
+
+  /* VER TEMA TRANSICIONES */
+
+  nav {
+    position: absolute;
+    background: #ffffff;
+    width: 45%;
+    margin-left: -100%;
+    font-size: 80%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #6d06e2;
+    transition: all 1s ease-in-out;
+  }
+}
+
+#burga:checked ~ .expandible {
+  margin: 0;
+}
+
+#parrafo {
+  color: azure;
+}

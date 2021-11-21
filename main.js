@@ -269,7 +269,8 @@ let products = [{
 
 {
     name: "Jeresy Philly",
-    tag: "philly",e: 500,
+    tag: "philly",
+    price: 500,
     incCart: 0
 },
 
@@ -383,15 +384,18 @@ let productContainer = document.querySelector(".products");
         <img src="./assets/${item.tag}.png">
         <span>${item.name}</span>
         </div>  
-        
-        
         <div class=price>$${item.price}</div>
 
+
+    
         <div class=quantity>
          <ion-icon name="arrow-dropleft-circle"></ion-icon>
         ${item.incCart}
         <ion-icon name="arrow-dropright-circle"></ion-icon>
-        <div class = total >$${item.incCart * item.price }.00</div>
+        </div>
+
+
+        <div class=total >$${item.incCart * item.price }.00</div>
         `
     })
  
