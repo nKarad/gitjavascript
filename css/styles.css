@@ -272,7 +272,7 @@ span {
   align-items: center;
 }
 
-.product {
+.producto {
   width: 45%;
   display: flex;
   justify-content: space-around;
@@ -280,13 +280,13 @@ span {
 
   border-bottom: 1px solid rgb(76, 4, 99);
 }
-.products {
+.productos {
   width: 80rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-.product img {
+.producto img {
   width: 85px;
 }
 
