@@ -18,61 +18,61 @@ const productos = [{
     nombre: "Jeresy Bulls",
     tag: "bulls",
     precio: 2000,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Bulls Altern.",
     tag: "bullsAlt",
     precio: 1000,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Jeresy Lakers",
     tag: "lakers",
     precio: 2000,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Jeresy Spurs",
     tag: "spurs",
     precio: 2000,
-    incCart: 0
+    enCarrito: 0
 },
 {
     nombre: "Jeresy Pistons",
     tag: "pistons",
     precio: 500,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Jeresy Philly",
     tag: "philly",
     precio: 500,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Jeresy Raptors",
     tag: "raptors",
     precio: 300,
-    incCart: 0
+    enCarrito: 0
 },
 
 {
     nombre: "Jeresy Suns",
     tag: "suns",
     precio: 300,
-    incCart: 0
+    enCarrito: 0
 },
 ]
 for (let i = 0; i < carrito.length; i++) {
     carrito[i].addEventListener("click", () => {
         cartNumbers(productos[i]);
-        totalCost(productos[i])
+        costoTotal(productos[i])
     })
 }
 function onLoadCartNumbers() {
@@ -114,10 +114,10 @@ if (cartItems!=null){
         }
 
 
-    cartItems[producto.tag].incCart+=1;
+    cartItems[producto.tag].enCarrito+=1;
 }
 else{
-    producto.incCart = 1;
+    producto.enCarrito = 1;
     cartItems={
     [producto.tag]:producto
 }
@@ -126,21 +126,21 @@ else{
 localStorage.setItem("productsInCart", JSON.stringify (cartItems))
 }
 
-function totalCost(producto){
+function costoTotal(producto){
 
-    let cartCost =localStorage.getItem("totalCost")
-// console.log ("Costo total es ", cartCost)
+    let costoTotal =localStorage.getItem("costoTotal")
+// console.log ("Costo total es ", costoTotal)
 ;
 
-console.log("el costo total es", cartCost);
-console.log(typeof cartCost);
+console.log("el costo total es", costoTotal);
+console.log(typeof costoTotal);
 
-if (cartCost != null){
-    cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost+ producto.precio);
+if (costoTotal != null){
+    costoTotal = parseInt(costoTotal);
+    localStorage.setItem("costoTotal", costoTotal+ producto.precio);
 }
 
-else {localStorage.setItem("totalCost", producto.precio )}
+else {localStorage.setItem("costoTotal", producto.precio )}
 
 
 }
@@ -149,17 +149,17 @@ function displayCart(){
 let cartItems = localStorage.getItem("productsInCart");
 cartItems=JSON.parse(cartItems);
 // console.log(cartItems)
-let productContainer = document.querySelector(".productos");
-let cartCost =localStorage.getItem("totalCost");
+let containerProductos = document.querySelector(".productos");
+let costoTotal =localStorage.getItem("costoTotal");
 
     // console.log ("A vergaston")
 
     //Agregar o quitar items desde el carrito linea 391
     //Tarjetas de items 
-    if (cartItems && productContainer) {
-    productContainer.innerHTML ="";
+    if (cartItems && containerProductos) {
+        containerProductos.innerHTML ="";
     Object.values(cartItems).map(item =>{
-        productContainer.innerHTML+= `
+        containerProductos.innerHTML+= `
         
         <div class="producto" >
         <ion-icon name="close-circle"></ion-icon>
@@ -173,24 +173,24 @@ let cartCost =localStorage.getItem("totalCost");
     
         <div class=cantidad>
         <ion-icon name="remove-circle"></ion-icon>
-        ${item.incCart}
+        ${item.enCarrito}
         <ion-icon name="add-circle"></ion-icon>
         </div>
 
 
-        <div class=total >$${item.incCart * item.precio }.00</div>
+        <div class=total >$${item.enCarrito * item.precio }.00</div>
         `
         
     });
 
-    productContainer.innerHTML += 
+    containerProductos.innerHTML += 
     `<div class=containerSumaTotal>
      <h4 class= textoSuma>
      Total Productos    
      </h4>
      
      <h4 sumaProductos> 
-     $${cartCost},00 </h4>        
+     $${costoTotal},00 </h4>        
      </div>
      `
 
