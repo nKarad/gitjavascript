@@ -48,24 +48,14 @@ a {
   color: white;
 }
 
-.headerIndex {
-  display: flex;
-  background-size: cover;
-  /* position: relative; */
-  height: 50h;
-  width: 100vw;
-  background-image: url(https://cdn.hopculture.com/wp-content/uploads/2017/11/mixologist-LEAD.jpg);
-  background-size: cover;
-  justify-content: left;
-  align-items: center;
-}
 
-.headerCursos {
+
+.headerTienda {
   display: flex;
   background-size: cover;
   /* position: relative; */
-  height: 40vh;
-  width: 100vw;
+  height: 34vh;
+  width: 99vw;
   background-image: url(https://i.ibb.co/2hT7GVD/intentodos.png);
   background-size: cover;
   justify-content: left;
@@ -235,10 +225,7 @@ span {
 }
 
 .image {
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  
   position: relative;
   overflow: hidden;
 }
@@ -336,6 +323,21 @@ span {
 .product img {
   width: 85px;
 }
+
+.containerSumaTotal{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  padding: 0%;
+  ;
+}
+
+.textoSuma {
+  width: 15%;
+  color: #6d06e2;
+}
+
 /* Media querys */
 
 @media screen and (max-width: 768px) {
