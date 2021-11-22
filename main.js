@@ -7,7 +7,7 @@
 
 //Carrito
 
-let carrito = document.querySelectorAll(".add-cart")
+let carrito = document.querySelectorAll(".botonAñadir")
 
 //Por que no toma el prevent default?
 // $("#camiseta").on ("añadirCarrito", function(e){
@@ -76,19 +76,19 @@ for (let i = 0; i < carrito.length; i++) {
     })
 }
 function onLoadCartNumbers() {
-    let productNumbers = localStorage.getItem("cartNumbers")
-    if (productNumbers) { document.querySelector(".cart span").textContent = productNumbers }
+    let cantidadProductos = localStorage.getItem("cartNumbers")
+    if (cantidadProductos) { document.querySelector(".cart span").textContent = cantidadProductos }
 }
 
 function cartNumbers(producto) {
     // console.log(" a vergaston ", producto)
-    let productNumbers = localStorage.getItem("cartNumbers");
+    let cantidadProductos = localStorage.getItem("cartNumbers");
 
-    productNumbers = parseInt(productNumbers);
+    cantidadProductos = parseInt(cantidadProductos);
 
-    if (productNumbers) {
-        localStorage.setItem("cartNumbers", productNumbers + 1);
-        document.querySelector(".cart span").textContent = productNumbers + 1;
+    if (cantidadProductos) {
+        localStorage.setItem("cartNumbers", cantidadProductos + 1);
+        document.querySelector(".cart span").textContent = cantidadProductos + 1;
     }
     else {
         localStorage.setItem("cartNumbers", 1);

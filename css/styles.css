@@ -206,14 +206,7 @@ span {
   overflow: hidden;
 }
 
-.foto:hover .cart1,
-.foto:hover .cart2,
-.foto:hover .cart3,
-.foto:hover .cart4,
-.foto:hover .cart5,
-.foto:hover .cart6,
-.foto:hover .cart7,
-.foto:hover .cart8 {
+.foto:hover .botonHover{
   bottom: 50px;
   opacity: 1;
   padding: 10px;
