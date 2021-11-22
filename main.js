@@ -7,65 +7,70 @@
 
 //Carrito
 
-let carts = document.querySelectorAll(".add-cart")
+let carrito = document.querySelectorAll(".add-cart")
+
+//Por que no toma el prevent default?
+// $("#camiseta").on ("añadirCarrito", function(e){
+// e.preventdefault();
+// })
 
 const products = [{
-    name: "Jeresy Bulls",
+    nombre: "Jeresy Bulls",
     tag: "bulls",
-    price: 2000,
+    precio: 2000,
     incCart: 0
 },
 
 {
-    name: "Bulls Altern.",
+    nombre: "Bulls Altern.",
     tag: "bullsAlt",
-    price: 1000,
+    precio: 1000,
     incCart: 0
 },
 
 {
-    name: "Jeresy Lakers",
+    nombre: "Jeresy Lakers",
     tag: "lakers",
-    price: 2000,
+    precio: 2000,
     incCart: 0
 },
 
 {
-    name: "Jeresy Spurs",
+    nombre: "Jeresy Spurs",
     tag: "spurs",
-    price: 2000,
+    precio: 2000,
     incCart: 0
 },
 {
-    name: "Jeresy Pistons",
+    nombre: "Jeresy Pistons",
     tag: "pistons",
-    price: 500,
+    precio: 500,
     incCart: 0
 },
 
 {
-    name: "Jeresy Philly",
+    nombre: "Jeresy Philly",
     tag: "philly",
-    price: 500,
+    precio: 500,
     incCart: 0
 },
 
 {
-    name: "Jeresy Raptors",
+    nombre: "Jeresy Raptors",
     tag: "raptors",
-    price: 300,
+    precio: 300,
     incCart: 0
 },
 
 {
-    name: "Jeresy Suns",
+    nombre: "Jeresy Suns",
     tag: "suns",
-    price: 300,
+    precio: 300,
     incCart: 0
 },
 ]
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
+for (let i = 0; i < carrito.length; i++) {
+    carrito[i].addEventListener("click", () => {
         cartNumbers(products[i]);
         totalCost(products[i])
     })
@@ -132,10 +137,10 @@ console.log(typeof cartCost);
 
 if (cartCost != null){
     cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost+ product.price);
+    localStorage.setItem("totalCost", cartCost+ product.precio);
 }
 
-else {localStorage.setItem("totalCost", product.price )}
+else {localStorage.setItem("totalCost", product.precio )}
 
 
 }
@@ -159,21 +164,21 @@ let cartCost =localStorage.getItem("totalCost");
         <div class="product" >
         <ion-icon name="close-circle"></ion-icon>
         <img src="./assets/${item.tag}.png">
-        <span>${item.name}</span>
+        <span>${item.nombre}</span>
         </div>  
 
 
-        <div class=price>$${item.price}</div>
+        <div class=precio>$${item.precio}</div>
 
     
-        <div class=quantity>
+        <div class=cantidad>
         <ion-icon name="remove-circle"></ion-icon>
         ${item.incCart}
         <ion-icon name="add-circle"></ion-icon>
         </div>
 
 
-        <div class=total >$${item.incCart * item.price }.00</div>
+        <div class=total >$${item.incCart * item.precio }.00</div>
         `
         
     });

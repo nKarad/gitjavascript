@@ -3,6 +3,41 @@
   margin: 0;
 }
 
+/* Header */
+
+header {
+  background: #6d06e2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#burga {
+  display: none;
+}
+
+header label {
+  display: inline-block;
+  padding: 10px;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+nav li a {
+  display: blck;
+  padding: 0px 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Body */
+
 body {
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
@@ -62,46 +97,15 @@ a {
   align-items: center;
 }
 
+
+/* Formulario */
+
+.formulario {text-align: center;}
+
 .formControl {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-.bodyForm {
-  color: blanchedalmond;
-  background-color: #01130a;
-}
-
-.h1MainPage2 {
-  display: inline-block;
-  width: 500px;
-  height: 300px;
-  padding: 9px;
-  margin: 8px;
-  background-color: #021b0f;
-  color: #fae9c9;
-}
-
-.textoGridHover {
-  font-family: "Montserrat", sans-serif;
-}
-
-/* Form */
-
-.form {
-  font-family: "Montserrat", sans-serif;
-  width: 500px;
-  height: 90px;
-  padding: 9px;
-  margin: 0px;
-  background-color: rgba(190, 190, 190, 0.288);
-  color: #fae9c9;
-}
-.form .formulario {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .inicio {
@@ -110,16 +114,10 @@ a {
   font-size: 24px;
 }
 
-.materialesBasicos {
-  margin-top: 150px;
-  list-style-position: inside;
-  list-style-image: url(file:///C:/Users/Nico/Documents/Coder%20House/Clase%203/assets/Copa.jpg);
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "Montserrat", sans-serif;
-  height: fit-content;
-  width: fit-content;
+#parrafo {
+  color: rgb(255, 255, 255);
 }
+
 
 .estiloTexto {
   color: blanchedalmond;
@@ -157,16 +155,16 @@ textarea::placeholder {
 }
 
 .titulo h2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 7%;
+  margin-bottom: 5%;
   font-size: 5rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
-.titulo h3 {
-  margin-bottom: 3rem;
+.titulo h3 {font-weight: bolder;
+  margin-bottom: 8%;
   font-size: 2rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -176,37 +174,6 @@ textarea::placeholder {
 
 .submit {
   color: white;
-}
-
-header {
-  background: #6d06e2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-#burga {
-  display: none;
-}
-
-header label {
-  display: inline-block;
-  padding: 10px;
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding-right: 20px;
-  justify-content: flex-end;
-}
-
-nav li a {
-  display: blck;
-  padding: 0px 30px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 2rem;
 }
 
 /* PAGINA PRODUCTOS */
@@ -224,12 +191,6 @@ span {
   font-size: 15px;
 }
 
-.image {
-  
-  position: relative;
-  overflow: hidden;
-}
-
 .add-cart {
   position: absolute;
   width: 100%;
@@ -239,15 +200,20 @@ span {
   cursor: pointer;
   text-align: center;
 }
+.foto {
+  
+  position: relative;
+  overflow: hidden;
+}
 
-.image:hover .cart1,
-.image:hover .cart2,
-.image:hover .cart3,
-.image:hover .cart4,
-.image:hover .cart5,
-.image:hover .cart6,
-.image:hover .cart7,
-.image:hover .cart8 {
+.foto:hover .cart1,
+.foto:hover .cart2,
+.foto:hover .cart3,
+.foto:hover .cart4,
+.foto:hover .cart5,
+.foto:hover .cart6,
+.foto:hover .cart7,
+.foto:hover .cart8 {
   bottom: 50px;
   opacity: 1;
   padding: 10px;
@@ -256,7 +222,7 @@ span {
 
 /* Carrito */
 
-.products-container {
+.containerProductos {
   align-items: center;
   max-width: 80rem;
   justify-content: space-around;
@@ -264,7 +230,7 @@ span {
   margin-top: 50px;
 }
 
-.products-container ion-icon {
+.containerProductos ion-icon {
   font-size: 23px;
   color: #6d06e2;
   margin-left: 10px;
@@ -272,27 +238,27 @@ span {
   cursor: pointer;
 }
 
-.product-header {
+.headerProductos {
   width: 100%;
   max-width: 80rem;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 4px solid blueviolet;
   margin: 0 auto;
 }
-.product-title {
+.nombreArticulo{
   width: 45%;
   border-bottom: 1px solid blueviolet;
 }
 
-.price {
+.precio {
   width: 24%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid blueviolet;
 }
 
-.quantity {
+.cantidad {
   width: 20%;
   border-bottom: 1px solid blueviolet;
   display: flex;
@@ -367,6 +333,3 @@ span {
   margin: 0;
 }
 
-#parrafo {
-  color: azure;
-}
