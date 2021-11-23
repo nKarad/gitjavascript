@@ -102,11 +102,6 @@ a {
 
 .formulario {text-align: center;}
 
-.formControl {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 
 .inicio {
   display: inline;
@@ -191,7 +186,7 @@ span {
   font-size: 15px;
 }
 
-.add-cart {
+.agregarCamiseta {
   position: absolute;
   width: 100%;
   background-color: #6d06e2;
@@ -201,11 +196,11 @@ span {
   text-align: center;
 }
 .foto {
-  
   position: relative;
   overflow: hidden;
 }
 
+.foto:hover  {transform: scale(1.05); transition:all .5s ease-in-out; }
 .foto:hover .botonHover {
   bottom: 50px;
   opacity: 1;
@@ -280,7 +275,7 @@ span {
 }
 
 .producto img {
-  width: 85px;
+  width: 86px;
 }
 
 .containerSumaTotal{
