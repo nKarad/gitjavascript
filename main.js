@@ -83,19 +83,19 @@ for (let i = 0; i < carrito.length; i++) {
     })
 }
 function onLoadnumeroIcono() {
-    let productNumbers = localStorage.getItem("numeroIcono")
-    if (productNumbers) { document.querySelector(".cart span").textContent = productNumbers }
+    let cantidadProductos = localStorage.getItem("numeroIcono")
+    if (cantidadProductos) { document.querySelector(".cart span").textContent = cantidadProductos }
 }
 
 function numeroIcono(producto) {
     // console.log(" a vergaston ", producto)
-    let productNumbers = localStorage.getItem("numeroIcono");
+    let cantidadProductos = localStorage.getItem("numeroIcono");
 
-    productNumbers = parseInt(productNumbers);
+    cantidadProductos = parseInt(cantidadProductos);
 
-    if (productNumbers) {
-        localStorage.setItem("numeroIcono", productNumbers + 1);
-        document.querySelector(".cart span").textContent = productNumbers + 1;
+    if (cantidadProductos) {
+        localStorage.setItem("numeroIcono", cantidadProductos + 1);
+        document.querySelector(".cart span").textContent = cantidadProductos + 1;
     }
     else {
         localStorage.setItem("numeroIcono", 1);
