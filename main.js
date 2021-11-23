@@ -25,9 +25,9 @@ const productos = [{
 },
 
 {
-    nombre: "Bulls Alternat.",
-    tag: "bullsAlt",
-    precio: 1000,
+    nombre: "Jeresy Philly",
+    tag: "philly",
+    precio: 500,
     enCarrito: 0
 },
 
@@ -52,16 +52,16 @@ const productos = [{
 },
 
 {
-    nombre: "Jeresy Philly",
-    tag: "philly",
-    precio: 500,
+    nombre: "Jeresy Raptors",
+    tag: "raptors",
+    precio: 300,
     enCarrito: 0
 },
 
 {
-    nombre: "Jeresy Raptors",
-    tag: "raptors",
-    precio: 300,
+    nombre: "Bulls Altern.",
+    tag: "bullsAlt",
+    precio: 1000,
     enCarrito: 0
 },
 

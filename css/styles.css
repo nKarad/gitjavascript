@@ -186,14 +186,17 @@ span {
   font-size: 15px;
 }
 
-.agregarCamiseta {
+.agregarCamiseta  {
   position: absolute;
-  width: 100%;
-  background-color: #6d06e2;
+  width: 65%;
+  height: 5%;
+  background-color: #000000d0;
   transition: all 0 3s ease-in-out;
-  opacity: 0;
   cursor: pointer;
   text-align: center;
+  font-weight: bold;
+  margin-bottom: 70%;
+  margin-left: 14%;
 }
 .foto {
   position: relative;
