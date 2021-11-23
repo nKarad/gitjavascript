@@ -203,7 +203,7 @@ span {
   overflow: hidden;
 }
 
-.foto:hover  {transform: scale(1.05); transition:all .5s ease-in-out; }
+.foto:hover  {transform: scale(1.025); transition:all .3s ease-in-out; }
 .foto:hover .botonHover {
   bottom: 50px;
   opacity: 1;

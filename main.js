@@ -84,7 +84,7 @@ for (let i = 0; i < carrito.length; i++) {
 }
 function onLoadnumeroIcono() {
     let cantidadProductos = localStorage.getItem("numeroIcono")
-    if (cantidadProductos) { document.querySelector(".cart span").textContent = cantidadProductos }
+    if (cantidadProductos) { document.querySelector(".carritoNav span").textContent = cantidadProductos }
 }
 
 function numeroIcono(producto) {
@@ -95,11 +95,11 @@ function numeroIcono(producto) {
 
     if (cantidadProductos) {
         localStorage.setItem("numeroIcono", cantidadProductos + 1);
-        document.querySelector(".cart span").textContent = cantidadProductos + 1;
+        document.querySelector(".carritoNav span").textContent = cantidadProductos + 1;
     }
     else {
         localStorage.setItem("numeroIcono", 1);
-        document.querySelector(".cart span").textContent = 1;
+        document.querySelector(".carritoNav span").textContent = 1;
     }
 
     setItem(producto);
@@ -154,7 +154,7 @@ function costoTotal(producto) {
 
 }
 
-function displayCart() {
+function displaycarritoNav() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
 
@@ -212,4 +212,4 @@ function displayCart() {
 
 
 onLoadnumeroIcono();
-displayCart();
+displaycarritoNav();
