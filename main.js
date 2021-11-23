@@ -15,7 +15,7 @@ let carrito = document.querySelectorAll(".agregarCamiseta")
 // })
 
 
-//Camisetas
+//Array Camisetas
 
 const productos = [{
     nombre: "Jeresy Bulls",
@@ -106,7 +106,7 @@ function numeroIcono(producto) {
 }
 
 function setItem(producto) {
-    let cartItems = localStorage.getItem("productsInCart")
+    let cartItems = localStorage.getItem("arrayListaCarrito")
     cartItems = JSON.parse(cartItems)
     // console.log("mis items son ", cartItems)
 
@@ -130,7 +130,7 @@ function setItem(producto) {
         }
     }
 
-    localStorage.setItem("productsInCart", JSON.stringify(cartItems))
+    localStorage.setItem("arrayListaCarrito", JSON.stringify(cartItems))
 }
 
 
@@ -155,7 +155,7 @@ function costoTotal(producto) {
 }
 
 function displaycarritoNav() {
-    let cartItems = localStorage.getItem("productsInCart");
+    let cartItems = localStorage.getItem("arrayListaCarrito");
     cartItems = JSON.parse(cartItems);
 
     // console.log(cartItems)
@@ -164,6 +164,8 @@ function displaycarritoNav() {
     let costoTotal = localStorage.getItem("costoTotal");
 
     // console.log ("A vergaston")
+
+    //Acomoda objetos en listita del cart
 
     if (cartItems && containerProductos) {
         containerProductos.innerHTML = "";
