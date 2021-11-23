@@ -40,26 +40,38 @@
             </ul>
           </nav>
         </div>
+         
+        <style>
+         
+        </style> 
       </header>
     
 
     <main">
-        <div class="titulo">
+    
+
+    <div id="gracias">Gracias por tu mensaje!</div>
+      
+
+   
+
+
+<div class="titulo">
             <h2 id="parrafo">Contactanos</h2>
             <h3>Tu nueva camiseta te esprera</h3>
-        </div>
+        </div> 
 
 
 
+        
 
 
-
-        <form id="form" class=formulario >
+        <form id="form" class=formulario onsubmit="agradecer" >
             <input id="nombre" type="text"  class="estiloForm" placeholder="Ingresá tu nombre" ><br>
             <input id="telefono" type="number" class="estiloForm" placeholder="Dejanos tu número"><br>
-            <textarea id="mensaje" class="estiloForm" rows="7"
+            <textarea id="mensaje" class="estiloForm" rows="5"
                 placeholder="Dejanos tu mensaje!"></textarea><br>
-            <input id="btn" type="sbmit" class="estiloForm2 submit" value="Enviar">
+            <button id="show" type="button" class="estiloForm2 submit" style="background-color: yellow;">Enviar</button>
 
         </form>
 
@@ -69,7 +81,7 @@
 
     <footer>
         <p>De Nicolás Caradzoglu, para <strong>CoderHouse</strong></p>
-    </footer>
+    </footer> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

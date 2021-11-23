@@ -121,6 +121,21 @@ a {
   font-weight: 500;
 }
 
+
+#gracias{width: 100%;
+height:8rem;
+background-color: yellow;
+display: none;
+font-size: 70px;
+
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+margin-top: 30px;
+padding-top: 30px;}
+
+
+
 .estiloForm {
   background-color: transparent;
   border: none;
@@ -150,8 +165,8 @@ textarea::placeholder {
 }
 
 .titulo h2 {
-  margin-top: 7%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   font-size: 5rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -170,6 +185,8 @@ textarea::placeholder {
 .submit {
   color: white;
 }
+
+
 
 /* PAGINA PRODUCTOS */
 

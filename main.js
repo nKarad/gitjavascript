@@ -1,10 +1,3 @@
-//Formulario de contacto
-
-// let form = document.getElementsByTagName("form")[0];
-// form.addEventListener("submit", () =>
-// {alert("Recibido!");
-// });
-
 //Carrito
 
 let carrito = document.querySelectorAll(".agregarCamiseta")
@@ -15,7 +8,7 @@ let carrito = document.querySelectorAll(".agregarCamiseta")
 // })
 
 
-//Array Camisetas
+//Camisetas -arrays-
 
 const productos = [{
     nombre: "Jeresy Bulls",
@@ -82,6 +75,8 @@ for (let i = 0; i < carrito.length; i++) {
         costoTotal(productos[i])
     })
 }
+
+//Muestra el numero de productos en el nav
 function onLoadnumeroIcono() {
     let cantidadProductos = localStorage.getItem("numeroIcono")
     if (cantidadProductos) { document.querySelector(".carritoNav span").textContent = cantidadProductos }
@@ -106,7 +101,7 @@ function numeroIcono(producto) {
 }
 
 function setItem(producto) {
-    let cartItems = localStorage.getItem("arrayListaCarrito")
+    let cartItems = localStorage.getItem("productosEnCarro")
     cartItems = JSON.parse(cartItems)
     // console.log("mis items son ", cartItems)
 
@@ -130,7 +125,7 @@ function setItem(producto) {
         }
     }
 
-    localStorage.setItem("arrayListaCarrito", JSON.stringify(cartItems))
+    localStorage.setItem("productosEnCarro", JSON.stringify(cartItems))
 }
 
 
@@ -155,7 +150,7 @@ function costoTotal(producto) {
 }
 
 function displaycarritoNav() {
-    let cartItems = localStorage.getItem("arrayListaCarrito");
+    let cartItems = localStorage.getItem("productosEnCarro");
     cartItems = JSON.parse(cartItems);
 
     // console.log(cartItems)
@@ -165,7 +160,7 @@ function displaycarritoNav() {
 
     // console.log ("A vergaston")
 
-    //Acomoda objetos en listita del cart
+    //Ubica los valores dentro de la lista del carrito 
 
     if (cartItems && containerProductos) {
         containerProductos.innerHTML = "";
@@ -187,7 +182,6 @@ function displaycarritoNav() {
         ${item.enCarrito}
         <ion-icon name="add-circle"></ion-icon>
         </div>
-
 
         <div class=total >$${item.enCarrito * item.precio}.00</div>
         `
@@ -215,3 +209,35 @@ function displaycarritoNav() {
 
 onLoadnumeroIcono();
 displaycarritoNav();
+
+
+
+///Formulario de contacto
+
+
+$("#show").on("click",function()  {
+      $("#gracias").show();
+} )
+
+
+//COSAS QUE FUI PROBANDO Y NO SALIAN PORQUE YA ESTOY QUEMADO
+// $("#form").on("submit"), function (e) {
+//     e.preventDefault ()
+//     const nombre = $("#nombre").val();
+// }
+// console.log (saludo ) nombre
+
+// const parrafo = document.querySelector("#parrafo");
+// const boton = document.querySelector("#btn");
+// let nombre =localStorage.getItem ("nombre")
+// const saludo =() =>{ 
+// // let texto = prompt ("Como es tu nombre?")
+// parrafo.textContent ="Gracias por tu mensaje " + nombre + "!!"}
+
+// boton.addEventListener("click", saludo)
+
+// const escribir =() =>{ 
+// let texto = "gil"
+// parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
+
+
