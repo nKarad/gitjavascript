@@ -237,7 +237,7 @@ $("#show").on("click",function()  {
 // boton.addEventListener("click", saludo)
 
 // const escribir =() =>{ 
-// let texto = "gil"
+// let texto = "bobito"
 // parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
 
 
