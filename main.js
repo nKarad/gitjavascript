@@ -3,9 +3,9 @@
 let carrito = document.querySelectorAll(".agregarCamiseta")
 
 //Por que no toma el prevent default?
-// $("#camiseta").on ("añadirCarrito", function(e){
-// e.preventdefault();
-// })
+$("#preventCamiseta").on ("click", function(e){
+ e.preventDefault();
+})
 
 
 //Camisetas -arrays-
