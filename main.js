@@ -2,7 +2,6 @@
 
 let carrito = document.querySelectorAll(".agregarCamiseta")
 
-//Por que no toma el prevent default?
 $("#preventCamiseta").on ("click", function(e){
  e.preventDefault();
 })
@@ -216,5 +215,5 @@ displaycarritoNav();
 
 
 $("#show").on("click",function()  {
-      $("#gracias").fadeIn();
+      $("#gracias").fadeIn(1000);
 } )
