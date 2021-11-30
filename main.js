@@ -216,28 +216,5 @@ displaycarritoNav();
 
 
 $("#show").on("click",function()  {
-      $("#gracias").show();
+      $("#gracias").fadeIn();
 } )
-
-
-//COSAS QUE FUI PROBANDO Y NO SALIAN PORQUE YA ESTOY QUEMADO
-// $("#form").on("submit"), function (e) {
-//     e.preventDefault ()
-//     const nombre = $("#nombre").val();
-// }
-// console.log (saludo ) nombre
-
-// const parrafo = document.querySelector("#parrafo");
-// const boton = document.querySelector("#btn");
-// let nombre =localStorage.getItem ("nombre")
-// const saludo =() =>{ 
-// // let texto = prompt ("Como es tu nombre?")
-// parrafo.textContent ="Gracias por tu mensaje " + nombre + "!!"}
-
-// boton.addEventListener("click", saludo)
-
-// const escribir =() =>{ 
-// let texto = "bobito"
-// parrafo.textContent ="Gracias por tu mensaje " + texto + "!!"}
-
-
