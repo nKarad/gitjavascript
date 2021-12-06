@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactanos</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <meta name="Keywords"
         content="Cursos de Coctelería, Cursos de Garnish, Aprender Cocteleria, Escuela de bartenders, Trabajo de Barman">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -58,6 +59,7 @@
 
 <div class="titulo">
             <h2 id="parrafo">Contactanos</h2>
+            <h3>Tu jersey preferido está acá</h3>
            
         </div> 
 
@@ -67,11 +69,11 @@
 
 
         <form id="form" class=formulario onsubmit="agradecer" >
-            <input id="nombre" type="text"  class="estiloForm" placeholder="Ingresá tu nombre" ><br>
-            <input id="telefono" type="number" class="estiloForm" placeholder="Dejanos tu número"><br>
-            <textarea id="mensaje" class="estiloForm" rows="5"
+            <input name="nombre" type="text"  class="estiloForm" placeholder="Ingresá tu nombre" ><br>
+            <input name="telefono" type="number" class="estiloForm" placeholder="Dejanos tu número"><br>
+            <textarea name="mensaje" class="estiloForm" rows="5"
                 placeholder="Dejanos tu mensaje!"></textarea><br>
-            <button id="show" type="button" class="estiloForm2 submit" style="background-color: yellow;">Enviar</button>
+            <button id="show" type="button" class="estiloForm2 submit" value="submit"> Enviar</button>
 
         </form>
 
@@ -79,10 +81,10 @@
 
     </main>
 
-    <footer>
-        <p>De Nicolás Caradzoglu, para <strong>CoderHouse</strong></p>
-    </footer> 
-    
+      <!-- <footer>
+          <p>De Nicolás Caradzoglu, para <strong>CoderHouse</strong></p>
+      </footer> 
+      -->
   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 

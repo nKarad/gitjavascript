@@ -8,6 +8,7 @@
   <meta name="description"
     content="Mixología del sur ofrece los más variados cursos para introducirte en el mundo de el buen beber" />
   <title>Tienda</title>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="Keywords" content="Cursos de Coctelería, Cursos de Garnish, Aprender Cocteleria, Escuela de bartenders,
     Trabajo de Barman">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -16,10 +17,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+  <!-- Script USD -->
+
 </head>
 
 <body>
-  <header style="height: 3rem;">
+  <header style="height: 3rem; position: fixed; width: 100%; z-index: 1;">
     <div>
       <input type=checkbox id="burga">
       <label for="burga"> <img src="https://i.ibb.co/MCjKw1d/burga.png">
@@ -35,7 +40,7 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header id=headerTienda>
 
 
   <main>
@@ -129,6 +134,12 @@
       </div>
   
     </div>
+
+<div class="botonDolar" >
+  <p class="usd" >Aceptamos Tarjetas de Crédito y USD</p>
+  <button id=ajax class=ajax>Conocer el cambio a la fecha</button>
+  <p id=bancoNacion></p>
+</div>
 
     <footer>
       <p>De Nicolás Caradzoglu, para <strong>CoderHouse</strong></p>

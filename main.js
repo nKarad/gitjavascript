@@ -211,9 +211,22 @@ displaycarritoNav();
 
 
 
-///Formulario de contacto
+///Formulario de contacto -animacion jquery y AJAX en el form
 
 
 $("#show").on("click",function()  {
       $("#gracias").fadeIn(1000);
 } )
+
+
+$(document).ready(function(){
+
+    $("#ajax").click(function(){
+      $.get("ajax.txt", function(data){
+
+        $("#bancoNacion").html(data);
+       
+      })
+    });
+  });
+
